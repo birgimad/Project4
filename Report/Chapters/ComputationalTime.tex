@@ -1,0 +1,73 @@
+\section{Computational Time for each Method}
+\label{sec:ComputationalTime}
+The \tabref{tab:multicol} and \tabref{tab:multicol2} shows computational time for some selected runs of the Gauss-Legendre, Laguerre, brute force Monte Carlo and improved Monte Carlo methods for different $N$'s together with the gained result by running the codes with the selected $N$'s. 
+
+\begin{table}[ht]
+\centering
+\caption{Computational time for selected runs of the Gauss-Legendre and Laguerre method.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Method & $N$ & Result & Time (sec)
+    \\
+    \hline
+    \multirow{3}{*}{Legendre}
+    & 12 & 0.0548094  &  0 
+    \\
+    & 20 & 0.127513 & 15
+    \\
+    & 30 & 0.163743 & 179
+    \\
+    \hline
+    \multirow{3}{*}{Laguerre}
+    & 12 & 0.192155 &  1
+    \\
+    & 20 & 0.195636 & 29
+    \\
+    & 30 & 0.195069 & 339
+    \\
+    \hline
+\end{tabular}
+\end{center}
+\label{tab:multicol}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Computational time for selected runs of the brute force Monte Carlo (MC) and improved Monte Carlo method.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+    Method & $N$ & Integral & Standard deviation & Time (sec)
+    \\    
+    \hline
+    \multirow{3}{*}{Brute force MC}
+    & $10^6$ & 0.0975576 & 0.0170543 & 0
+    \\
+    & $10^7$ & 0.229248 & 0.0444382 & 6
+    \\
+    & $10^8$ & 0.19671 & 0.0192389 & 65 
+    \\
+    \hline
+	\multirow{3}{*}{Improved MC}
+	& 1000 & 0.219422 & 0.033404 & 0  
+    \\
+    & $10^4$ & 0.19491 & 0.0124651 & 0
+    \\
+    & $10^5$ & 0.188323 & 0.00347509 & 0
+    \\
+    & $10^6$ & 0.192977 & 0.000980611 & 0
+    \\
+    & $10^7$ & 0.192412 & 0.00031521 & 8
+    \\
+    & $10^8$ & 0.19286 & 0.000104762 & 82
+    \\
+    \hline
+\end{tabular}
+\end{center}
+\label{tab:multicol2}
+\end{table}
+
+There is a big difference between the methods, both in run time and accuracy. Both the Gaussian-Legendre and Gaussian-Laguerre methods are slow and inaccurate compared to the Monte Carlo methods. They also require small N values to be able to run, which also limits their accuracy. The Gaussian-Laguerre method produces more accurate results than the Gaussian-Legendre method (see \tabref{tab:multicol}, but the computational time is almost twice as big. 
+
+Both the brute force Monte Carlo method and the improved gives more accurate results than the Gaussian methods when the N value is high. At low N values they are giving worse results than the Gaussian methods as seen in \tabref{tab:multicol} and \tabref{tab:multicol2}. But the run time is much better, they can do large N values quicker than the Gaussian.  If comparing the two Monte Carlo methods listed in \tabref{tab:multicol2}, the improved one gives better results with a small N than the brute force one, but the brute force method is quicker as it has fewer calculations to make. But as the improved one gives the same accuracy with a smaller N value, it can get the same accuracy just as fast or faster than the brute force one. 

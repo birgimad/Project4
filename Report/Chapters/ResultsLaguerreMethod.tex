@@ -1,0 +1,21 @@
+\section{Solving the Integral by the Laguerre Method}
+\label{sec:ResultsLaguerreMethod}
+When solving the the integral with spherical coordinates with $r_i$ being the root of the $n$'th Laguerre polynomial and $\theta_i$ and $\phi_i$ being roots of the $n$'th Legendre polynomial, the integral value with $n = 12$ is found to be 
+\begin{align}
+	GLr_{12} = 0.192155
+\end{align}
+which deviates from the closed-form solution by
+\begin{align}
+	\text{percentage deviation} = \frac{0.192155 - 5\pi^2 /16^2}{5\pi^2 /16^2} \cdot 100 \% \approx -0.32 \%
+\end{align}
+which is a great deal smaller than the deviation when using the Gauss-Legendre method for $n=40$.
+
+However, if the computed Laguerre method is run for $n=30$, the computed value for the integral is 
+\begin{align}
+	GLr_{30} = 0.195069
+\end{align}
+which deviates from the closed form solution by
+\begin{align}
+	\text{percentage deviation} = \frac{0.195069 - 5\pi^2 /16^2}{5\pi^2 /16^2} \cdot 100 \% \approx 1.2 \%
+\end{align}
+and hence the deviation from the closed-form solution is found to be larger for $n=30$ than for $n=12$, which is intuitively not what was to be expected.

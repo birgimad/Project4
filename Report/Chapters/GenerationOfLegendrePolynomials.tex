@@ -1,0 +1,63 @@
+\section{Generation of Legendre Polynomials}
+\label{sec:GenerationOfLegendrePolynomials}
+The following lines of code generates the $n$'th order Legendre polynomial from the recursive relation given in \matref{eq:GLdMethod4} and its roots.
+Since the roots are symmetric about $0$, the for-loop is run from $i=1$ to $i<m$ for $m = n+1$ with $n$ being the order of the computed polynomial and hence the length of the array containing the roots and the array containing the respective weights of the roots. 
+\begin{lstlisting}
+//Code for computing the Legendre polynomials to determine the roots of the n'th Legendre polynomial
+    for (int i = 1; i<=m;i++){
+        root = cos(pi * (4*i-1) / (4*n + 2 ));  
+        //approximation of the root of the n'th polynomial
+    do{
+        // This uses the recursive relation to compute the Legendre polynomials
+        double L_plus = 1.0 , L = 0.0, L_minus;
+        for (int j = 0; j < n; j++)
+        {
+        L_minus = L;
+        L = L_plus;
+        L_plus = (2.0*j +1)*root*L - j*L_minus ;
+        L_plus /= j+1;
+        }
+		//derivative of the Legendre polynomial (L_plus)
+        dev_L = (-n*root*L_plus + n*L)/(1-root*root);   
+        // Newton's method
+        z = root;
+        root  = z - L_plus/dev_L;                   
+       } while(fabs(root - z) > pow(10,-6));
+       //compute values of x (array containing the roots) and w (array containing the roots)
+        * w_temp1 = 2/((1-root*root)*(dev_L*dev_L));
+        *(x_temp1++) = root;
+        *(x_temp2--) = -root;
+        *(w_temp2--) = *(w_temp1++);
+    }
+\end{lstlisting}
+The algorithm starts with an approximation of the $i$'th root of the $n$'th order Legendre polynomial as described in \matref{eq:GLdMethod3}. 
+After computation of the Legendre polynomial, the approximation is improved by Newton's method.
+If the difference between the improved approximation and the initial approximation is greater than zero (that is $10^{-6}$), the $n$'th order Legendre polynomial is computed using this new approximation, and with this new Legendre polynomial the previously improved approximation of the root is again improved, and once again, if the difference between the approximated roots is greater than zero, new Legendre polynomials are computed.  
+This procedure is run until the difference between the approximation of the $i$'th root and the improved approximation of the $i$'th root is zero.
+When this is achieved, the root $z_i$ is put into the $i$'th and $(n-i)$'th entry of the array containing the roots, and the corresponding weights are computed by \matref{eq:GLdMethod6}.
+This is done $m$, in which $m$ is the lowest integer value of $(n+1)/2$ times, and hence all the entrances of the arrays $x[n]$ and $w[n]$ will be filled with the roots and corresponding weights
+
+\subsection{Test of the Legendre Polynomial Generation}
+\tabref{tab:testGLdpol} provides the roots and corresponding weights of the $n$'th Legendre polynomial.
+\cite{LegendrePolRootWeight} 
+For $n=5$, these are 
+\begin{table}[H]
+\centering
+\caption{Given roots and weights for the Legendre polynomial}
+\begin{center}
+\begin{tabular}{ | l | l | }
+  \hline			
+  Roots & Weights  \\
+  \hline
+  0 & 0.568889  \\
+  \hline
+  $\pm$ 0.538469 & 0.478629  \\
+  \hline 
+  $\pm$ 0.90618 & 0.236927 \\
+  \hline 
+\end{tabular}
+\end{center}
+\label{tab:testGLdpol}
+\end{table}
+
+which is exactly what is obtained up to the same accuracy as in \figref{tab:testGLdpol} by running the above lines of code for $n=5$. (see \url{https://github.com/birgimad/Project3/blob/master/Project3_BM_MI_SC/Data/LegendrePol_n_5.txt})

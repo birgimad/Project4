@@ -1,0 +1,27 @@
+\section{Laguerre Method for Computing the Integral}
+\label{sec:LaguerreMethod}
+In the Gauss-Laguerre method integrals of the form
+\begin{align}
+	I = \int _0 ^{\infty } x^{\alpha } e^{-x} g(x) dx
+	\label{eq:LaguerreMethod1}
+\end{align}
+can be solved using Laguerre polynomials and a weight function given by
+\begin{align}
+	W(x) = x^{\alpha} e^{-x}
+	\label{eq:LaguerreMethod2}
+\end{align} 
+Hence, if the variables of the integral in 
+\matref{eq:NatureOfTheProblem2} 
+are changed from cartesian coordinates to spherical coordinates with 
+$r_i \in [0;\infty )$, 
+$\theta_i \in [0;\pi]$, and 
+$\phi_i \in [0;2\pi]$, the integral can be solved by using the roots and corresponding weights of Legendre polynomials for $\theta_i$ and $\phi_i$ and use roots and corresponding weights of Laguerre polynomials for $r_i$.
+The algorithm for finding the roots and their corresponding weights of the Laguerre polynomials will, however, not be discussed here.
+An important note is, though, that since the weight function includes $x^{\alpha}$ and $e^{-x}$, the function that is to be evaluated in the roots of the $n$'th Laguerre polynomial is 
+\begin{align}  
+   g(r_1, r_2, \theta_1, \theta_2, \phi_1, \phi_2 ) = 
+   \frac{e^{-2\alpha (r_1 + r_2 ) + r_1 + r_2}}{\sqrt{r_1^2 + r_2 ^2 -2 r_1 r_2 cos(\beta)}}  
+sin(\theta_1 ) sin(\theta_2 )    
+   \label{eq:LaguerreMethod3}
+\end{align} 
+with $cos(\beta)$ described by \matref{eq:CartesianSpherical4}.
