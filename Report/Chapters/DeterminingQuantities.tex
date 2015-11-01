@@ -1,0 +1,42 @@
+\subsection{Determining Quantities}
+\label{sec:DeterminingQuantities}
+For the canonical ensemble with probability distribution given by the Boltzmann distribution
+\begin{align}
+	P_i (\beta ) = \frac{e^{-\beta E_i}}{Z}
+	\label{eq:BoltzmannDistribution}
+\end{align}  
+with $\beta = 1/k_B T$, in which $k_B$ is Boltzmann's constant and $T$ is the temperature of the system, $E_i$ being the energy of the $i$'th microstate, and $Z$ being the partition function given by
+\begin{align}
+	Z = \sum _{i=1} ^M e^{-\beta E_i}
+	\label{eq:PartitionFunction}
+\end{align}  
+for a system with $M$ microstates. 
+For each microstate $i$ in a spin system with $N$ spins $s_i = \pm 1$, the energy $E_i$ and magnetization $\mathcal{M}_i$ are given as
+\fxnote{what is J ?!}
+\begin{align}
+	E_i = -J \sum_{<kl>} ^N s_k s_l 
+	\qquad \text{and} \qquad
+	\mathcal{M} _i = \sum _{j=1} ^N s_j
+	\label{eq:EnergyMagnetization}
+\end{align}
+in which $<kl>$ means that the sum is over nearest neighbours, only.  
+The expectation value of the energy, is then given as
+\begin{align}
+	\left< E \right> = \sum _{i=1} ^M E_i P_i (\beta ) 
+	= \frac{1}{Z} \sum _{i=1} ^M E_i e^{-\beta E_i } 
+	\label{eq:ExpectationValueEnergy}
+\end{align}
+whilst the expectation value of the magnetization, can be determined by
+\begin{align}
+	\left< \mathcal{M} \right> = \sum _{i=1} ^M \mathcal{M}_i P_i (\beta ) 
+	= \frac{1}{Z} \sum _{i=1} ^M \mathcal{M}_i e^{-\beta E_i } 
+	\label{eq:ExpectationValueMagnetization}
+\end{align}
+From the variance of $E$ and $\mathcal{M}$, the specific heat $C_v$ and susceptibility $\chi$ can be found, respectively. 
+That is
+\begin{align}
+	C_v = \frac{1}{k_B T^2} \left< \left< E^2 \right> - \left< E \right> ^2 \right>
+	\qquad \text{and} \qquad
+	\chi = \frac{1}{k_B T} \left< \left< \mathcal{M}^2 \right> - \left< \mathcal{M} \right> ^2 \right>
+	\label{eq:SpecificHeatSusceptibility}
+\end{align}
