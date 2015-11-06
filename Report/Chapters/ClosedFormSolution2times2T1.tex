@@ -10,46 +10,41 @@ With $\tilde{T} = 1/\beta J = 1.0$, the partition function in \matref{eq:Partiti
 \begin{align}
 	Z = 12+4\cosh(8) \approx 6000
 \end{align}
-The expectation value of the magnetization is surely still zero.
+\fxnote{write more exact result for Z}
+The expectation value of the magnetization is surely still zero, whilst the expectation value of the absolute value of the magnetization becomes
+\begin{align}
+	\left< \mathcal{M} \right> = \frac{1}{Z} ( 8 e^8 +4) \approx 3.9926
+\end{align}
 With the temperature given in units of $[k_B T/J]$, the formulas for determining the expectation value of the energy and the specific heat and susceptibility, given in the previous section, must be slightly modified to give a value.
 E.g. the expectation value of the energy given by \matref{eq:ExpectationEnergy2times2} will have to be divided by $J$, giving the computed expectation value in the unit of $[E/J]$. 
 For a temperature of $\tilde{T} = 1.0$, the computed expectation value of the energy is then
 \begin{align}
 	\tilde{\left< E \right>} 
 	= \frac{\left< E \right>}{J}	
-	= \frac{16}{Z} (e^{-8}-e^{8}) \approx -7.98 
+	= \frac{16}{Z} (e^{-8}-e^{8}) \approx -7.9839 
 \end{align} 
 This is approximately the same as the lowest energy state of the system (see \tabref{tab:ClosedFormSolution1}), which is also what was to be expected for low temperatures. 
 To find $C_v$ and $\chi$, \matref{eq:SpecificHeat2times2} and \eqref{sec:Susceptibility2times2} are considered, and with a temperature $\tilde{T}  = 1.0$, they give the values
 \begin{align*}
 	\tilde{C}_v = \frac{C_v}{J}
-	\approx 0.1283
+	\approx 0.12830
 	\qquad \text{and} \qquad
-	\tilde{\chi} = \chi J \approx 16
+	\tilde{\chi} = \chi J \approx 0.03209
 \end{align*}
-\fxnote{check results}
+\fxnote{check results, especially $\chi$}
 The values of the quantities gained in this section for the $2\times 2$ spin case with $\tilde{T} = 1.0$ in units of $[k_B T/J] = [1/\beta J]$ are collected in the table below.
 \begin{table}[H]
 \centering
 \caption{Various quantity values for the $2\times 2$ spin case with temperature $\tilde{T} = 1.0$ in units of $[k_B T/J] = [1/\beta J]$.}
 \begin{center}
-\begin{tabular}{ |l | c | c | }
+\begin{tabular}{ | c | c | c | c | c | }
   \hline			
-  Configuration & Energy & Magnetization  \\
+  $\left< \tilde{E} \right>$ & $\left< \mathcal{M} \right> $ &  $\left< |\mathcal{M} | \right> $ & $\tilde{C}_v $ & $\tilde{\chi}$  \\
   \hline
-  (1) & $-8J$ & $4$ \\
-  \hline
-  (2) & $-8J$ & $-4$ \\
-  \hline
-  (3) -- (4) & $8J$ & $0$ \\
-  \hline
-  (5) -- (8) & $0$ & $0$ \\
-  \hline
-  (9) -- (12) & $0$ & $2$ \\
-  \hline
-  (13) -- (16) & $0$ & $-2$ \\
+  $-7.9839$ & $0$ & $3.9926$ & $0.12830$ & $0.03209$ \\
   \hline
 \end{tabular}
 \end{center}
 \label{tab:ClosedFormSolution2times2T1}
 \end{table}
+\fxnote{fix $\chi$}

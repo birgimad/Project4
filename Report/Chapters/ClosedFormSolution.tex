@@ -63,6 +63,12 @@ and
 	\left< \mathcal{M} \right> = \frac{1}{Z} (4e^{8\beta J} -4e^{8\beta J} +2 -2 ) = 0 
 	\label{eq:ExpectationMagnetization2times2}
 \end{align}
+However, the expectation value of the absolute value of the magnetization differ from zero. 
+That is
+\begin{align}
+	\left< | \mathcal{M} | \right> = \frac{1}{Z} \left( |4|e^{8\beta J} + |-4|e^{8\beta J} +|2| + |-2| \right) = 
+	\frac{1}{Z} ( 8 e^{8\beta J} + 4 ) 
+\end{align}
 To compute the specific heat $C_v$ and the susceptibility, the quantities $\left< E^2 \right>$ and $\left< \mathcal{M}^2 \right>$ must be known.
 For this $2\times 2$ spin case they become
 \begin{align}
@@ -72,18 +78,18 @@ For this $2\times 2$ spin case they become
 \end{align}
 and 
 \begin{align}
-	\left< \mathcal{M}^2 \right> = \frac{1}{Z} \sum _{i=1} ^{16} \mathcal{M}_i ^2 e^{-\beta E_i}
-	= \frac{32}{Z} (e^{-8\beta J} + 1 ) 
+	\left< \mathcal{M}^2 \right> = \frac{1}{Z} \sum _{i=1} ^{16} \mathcal{M}_i ^2 e^{\beta E_i}
+	= \frac{32}{Z} (e^{8\beta J} + 1 ) 
 	\label{eq:ExpectationMagnetizationSquared2times2}
 \end{align}
 The specific heat $C_v$ and the susceptibility $\chi$ can now be determined by the expressions in \matref{eq:SpecificHeatSusceptibility}, and after some joggling with the results gained by \matref{eq:ExpectationEnergy2times2}, \eqref{eq:ExpectationMagnetization2times2}, \eqref{eq:ExpectationEnergySquared2times2} and \eqref{eq:ExpectationMagnetizationSquared2times2}, it is evident that
 \begin{align}
-	C_v = \frac{128 J^2}{z k_B T^2} \left[ e^{8\beta J} + e^{-8\beta J} - \frac{2e^{-16\beta J}+2e^{16\beta J}+4}{Z} \right]
+	C_v = \frac{128 J^2}{Z k_B T^2} \left[ e^{8\beta J} + e^{-8\beta J} - \frac{2e^{-16\beta J}+2e^{16\beta J}+4}{Z} \right]
 	\label{eq:SpecificHeat2times2}
 \end{align}
 \fxnote{check that this is correct}
 and
 \begin{align}
-	\chi = \frac{16}{k_B T} (e^{-8\beta J} +1)
+	\chi = \frac{1}{k_B T Z} \left[ 32(e^{8\beta J} +1) - \frac{1}{Z}\left( 8e^{8\beta J} +4 \right)^2 \right]
 	\label{sec:Susceptibility2times2}
 \end{align}

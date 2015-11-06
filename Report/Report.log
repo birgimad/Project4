@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.26)  30 OCT 2015 18:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.26)  6 NOV 2015 15:06
 entering extended mode
 **Report.tex
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\preamble.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\preamble.tex
 ("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\memoir.cls"
 Document Class: memoir 2013/05/30 v3.7b configurable book, report, article docu
 ment class
@@ -1321,7 +1321,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks52
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")))
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.aux")
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
@@ -1380,8 +1380,8 @@ LaTeX Info: Redefining \nameref on input line 4.
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.out")
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.out")
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.out)
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.out)
 \@outlinefile=\write5
 LaTeX Info: Redefining \Ref on input line 4.
 
@@ -1420,8 +1420,8 @@ LaTeX Info: Redefining \Ref on input line 4.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Formalia/Fron
-tpage.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Formalia/Frontpage
+.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  <Figures/UiO_Seal_A_ENG.png, id=43, 566.5968pt x 95.8782pt>
@@ -1440,12 +1440,13 @@ Package pdftex.def Info: Figures/UiO_Seal_A_ENG.png used on input line 19.
 Non-PDF special ignored!
 Non-PDF special ignored!
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Birgitte/Desktop
-/Report (Project4) not merged/Figures/UiO_Seal_A_ENG.png>] [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Birgitte/Documen
+ts/GitHub/Project4/Report/Figures/UiO_Seal_A_ENG.png>]
+[2
 
 ])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Formalia/tite
-lblad.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Formalia/titelblad
+.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -1491,7 +1492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--97
 ] [4
 
 ]
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Abstract.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
@@ -1502,30 +1503,31 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
 line 2.
-) [5
+)
+[5
 
 ] [6
 
-] ("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.toc") [7] [8
+] (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.toc)
+[7] [8
 
 ]
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Introduction.
-tex")
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Method.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Introduction.tex)
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Method.tex
 [1
 
 ] [2
 
 ])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/NatureOfThePr
-oblem.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/NatureOfTheProblem
+.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 )
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/DeterminingQu
-antities.tex" [3])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/ClosedFormSol
-ution.tex"
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/DeterminingQuantit
+ies.tex [3])
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/ClosedFormSolution
+.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -1548,10 +1550,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
- [4 <C:/Users/Birgitte/Desktop/Report (Project4) not merged/Figures/Configurati
-ons.png>])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/ClosedFormSol
-ution2times2T1.tex"
+ [4 <C:/Users/Birgitte/Documents/GitHub/Project4/Report/Figures/Configurations.
+png>])
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/ClosedFormSolution
+2times2T1.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -1572,15 +1574,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-[5])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Results.tex"
+[5]) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Results.tex
 [6])
-("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Chapters/Conclusion.te
-x" [7
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex
+[7
 
 ] [8
 
-]) ("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.bbl" [9] [10
+]) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.bbl
+[9] [10
 
 ]
 bibitemlist
@@ -1591,7 +1593,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 \tf@toc=\write6
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
- ("C:\Users\Birgitte\Desktop\Report (Project4) not merged\Report.aux")
+ (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `Report.out' has not changed.
@@ -1599,11 +1601,11 @@ Package rerunfilecheck Info: File `Report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
- 20013 strings out of 493921
- 303698 string characters out of 3147273
- 601496 words of memory out of 3000000
- 22754 multiletter control sequences out of 15000+200000
- 84666 words of font info for 180 fonts, out of 3000000 for 9000
+ 20020 strings out of 493921
+ 303629 string characters out of 3147273
+ 602757 words of memory out of 3000000
+ 22755 multiletter control sequences out of 15000+200000
+ 85394 words of font info for 182 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
  57i,19n,97p,914b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
@@ -1618,9 +1620,9 @@ m/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (19 pages, 189933 bytes).
+Output written on Report.pdf (19 pages, 192063 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
