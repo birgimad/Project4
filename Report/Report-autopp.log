@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2013.8.26)  6 NOV 2015 15:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2013.8.26)  6 NOV 2015 16:39
 entering extended mode
 **\let \APPmakepictures \empty \input  Report.tex
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.tex (C:\Users\Birgit
@@ -1437,19 +1437,46 @@ nput line 9.
 
 
 LaTeX Warning: Reference `eq:ExpectationEnergy2times2' on page 6 undefined on i
-nput line 18.
+nput line 19.
 
 
 LaTeX Warning: Reference `tab:ClosedFormSolution1' on page 6 undefined on input
- line 25.
+ line 26.
 
 
 LaTeX Warning: Reference `eq:SpecificHeat2times2' on page 6 undefined on input 
-line 26.
+line 27.
 
 
 LaTeX Warning: Reference `sec:Susceptibility2times2' on page 6 undefined on inp
-ut line 26.
+ut line 27.
+
+)
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/IsingModelNgreater
+.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\times' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+LaTeX Warning: Reference `eq:EnergyMagnetization' on page 7 undefined on input 
+line 7.
+
+
+LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 7 undefined on 
+input line 9.
+
+
+LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 7 undefined on 
+input line 39.
 
 ) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Results.tex) (C:
 \Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex)
@@ -1457,22 +1484,22 @@ No file Report-autopp.bbl.
 
 Package pst-pdf Warning: Picture container needs cropping..
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 19474 strings out of 493922
- 296006 string characters out of 3147296
- 595437 words of memory out of 3000000
- 22352 multiletter control sequences out of 15000+200000
- 46824 words of font info for 126 fonts, out of 3000000 for 9000
+ 19641 strings out of 493922
+ 297980 string characters out of 3147296
+ 619437 words of memory out of 3000000
+ 22515 multiletter control sequences out of 15000+200000
+ 49697 words of font info for 135 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 57i,19n,97p,620b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,97p,620b,1057s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 No pages of output.
