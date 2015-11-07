@@ -1,0 +1,8 @@
+Expectation value of energy and magnetization and specific heat and susceptibility computed by generalized Ising method using Metropolis algorithm:
+n = 20
+T = 1
+Number of MC cycles:    100000
+Expectation value of energy:    -799.4
+Expectation value of magnetization:   399.808
+Specific heat:   6.52998
+Susceptibilty:  0.688942
