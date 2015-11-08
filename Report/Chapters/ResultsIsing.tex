@@ -3,11 +3,11 @@ Testing the number of Monte Carlo cycle needed for an acceptable result as seen 
 
 \begin{table}[H] 
 \centering
-\caption{The Energy , Magnitization, Specific heat and susceptibility for different number of Monte Carlo cycles.}
+\caption{The Energy , Magnitization, Specific Heat and susceptibility for different number of Monte Carlo cycles.}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-MC-cycles & Energy & Magnetization & Specific Heat & Susceptibility \\
+MC-cycles & Energy [$\left< \tilde{E} \right>$] & Magnetization [$\left< \mathcal{M} \right>$] & Specific Heat [$\tilde{C}_v $]& Susceptibility [$\tilde{\chi}$] \\
 \hline
 1000 & -7.904 & 3.964 & 0.7588 & 0.1187 \\
 10000 & -7.9776 & 0.5266 & 0.1787 & 0.0255 \\
@@ -21,5 +21,7 @@ MC-cycles & Energy & Magnetization & Specific Heat & Susceptibility \\
 \label{tab:MCising}
 \end{table}
 
-This shows a good corrolation between the closed form soulution found earlier and the numerical result using MC methods. For the energy accuracy is to three digits when using 100000 MC cycles.
+The results shows a good corrolation between the closed form soulution found earlier in \tabref{tab:ClosedFormSolution2times2T1} and the numerical result using MC methods in \tabref{tab:MCising}. 
+
+For the energy the accuracy is to three digits when using 100000 MC cycles. And also the magnetization, specific heat and susceptibility shows acceptable results with one percent or less deviation from the closed form. 
  

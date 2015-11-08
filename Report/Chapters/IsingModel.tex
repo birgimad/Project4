@@ -1,8 +1,6 @@
-\section{Ising model for the $N = 2x2$  with T = 1.0}
+\section{Ising model for $N = 2x2$  with T = 1.0}
 
-The Ising model is used in this case to study the face transition of an element. 
-
-Looking at a $2x2$ spin system.
+The Ising model is used to study the face transition of an element. In this case looking at a $2x2$ spin system. \fixme{Write something more}
 
 Starting by making a matrix as seen in code below, what this matrix is doesn't matter when the number of Monte Carlo cycles is high. But it gives control over the energy and magnetization in the beginning. 
 
@@ -15,19 +13,15 @@ Starting by making a matrix as seen in code below, what this matrix is doesn't m
 
 \end{lstlisting}
 
-The flipping of the spins happen at random, so a random number generator is used to generate either one or zero. Allowing for equal chance of the spins flipping. 
-
-When finding the expected energy value, the change in energy is added up for all the Monte Carlo cycles (MC cycle). When dividing the total energy on the number of MC cycles the most likely energy state.
-
-The magnetization is found by just adding up the Spins as given in \matref{eq:EnergyMagnetization}. 
+The flipping of the spins happen at random, so a random number generator is used to generate either one or zero. Allowing for equal chance of the spins flipping. When finding the expected energy value, the change in energy is added up for all the Monte Carlo cycles (MC cycle). When dividing the total energy on the number of MC cycles the most likely energy state.The magnetization is found by just adding up the Spins as given in \matref{eq:EnergyMagnetization}. 
 
 The specific heat is found using 
 
 \begin{align}
-\frac{C_v}{J} = \frac{1}{Z} <E^2> - <E>^2
+\frac{C_v}{J} = \frac{1}{MC_{cycles}^2} (<E^2> - <E>^2)
 \end{align}
 
-Where the energy is the expected energy found and  
+Where the energy is the expected energy found and the energy squared is also found inside the MC cycles.   
 
 
 Proceeding to generate the energy and magnetization when the spin changes. This is done using MC cycles and finding the energy change when a spin flips. 
