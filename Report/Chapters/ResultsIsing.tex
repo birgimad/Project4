@@ -1,0 +1,25 @@
+\section{Ising model}
+Testing the number of Monte Carlo cycle needed for an acceptable result as seen in \tabref{tab:MCising} (Results are just written down directly from print out)
+
+\begin{table}[H] 
+\centering
+\caption{The Energy , Magnitization, Specific heat and susceptibility for different number of Monte Carlo cycles.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+MC-cycles & Energy & Magnetization & Specific Heat & Susceptibility \\
+\hline
+1000 & -7.904 & 3.964 & 0.7588 & 0.1187 \\
+10000 & -7.9776 & 0.5266 & 0.1787 & 0.0255 \\
+100000 & -7.9827 & 0.6364 & 0.1379 & 0.0188\\
+1000000 & -7.9834 & -0.0315 & 0.1321 & 0.0163 \\
+10000000 & -7.9837 & -0.0051 & 0.1296 & 0.0162 \\
+\hline 
+
+\end{tabular}
+\end{center}
+\label{tab:MCising}
+\end{table}
+
+This shows a good corrolation between the closed form soulution found earlier and the numerical result using MC methods. For the energy accuracy is to three digits when using 100000 MC cycles.
+ 

@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <time.h>
 using namespace std;
-#include "include\armadillo"
+#include "armadillo"
 using namespace arma;
 
 int main()
@@ -25,7 +25,7 @@ int main()
     spin_matrix(0,1) = -1;
     spin_matrix(1,0) = 1;
     spin_matrix(1,1) = 1;
-    double E_expectation = 0, M_expectation = 0;
+    double E_expectation = 0, M_expectation = 0, M_expectation2 = 0;
 
     int x[n], y[n];
     double w, DE_x, DE_y, DE;
@@ -80,12 +80,13 @@ int main()
 //The computed specific heat is in the unit c_v / k_B
     E_expectation += E;
     M_expectation += M;
+    M_expectation2 += fabs(M);
     E_squared += E*E;
     M_squared += M*M;
     //cout << "cycle:" << setw(10) << cycles << setw(10) << "E:" << E << endl;
 }
 
-    susceptibility = 1/T * (M_squared/mccycles -(M_expectation/mccycles)*(M_expectation/mccycles));
+    susceptibility = 1/T * (M_squared/mccycles -(M_expectation2/mccycles)*(M_expectation2/mccycles));
     specific_heat = 1/T*(E_squared/mccycles -(E_expectation/mccycles)*(E_expectation/mccycles));
 cout << "Number of MC cycles:" << setw(10) << mccycles << endl;
 cout << "Most likely state" << endl;

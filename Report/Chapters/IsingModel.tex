@@ -1,0 +1,69 @@
+\section{Ising model for the $N = 2x2$  with T = 1.0}
+
+The Ising model is used in this case to study the face transition of an element. 
+
+Looking at a $2x2$ spin system.
+
+Starting by making a matrix as seen in code below, what this matrix is doesn't matter when the number of Monte Carlo cycles is high. But it gives control over the energy and magnetization in the beginning. 
+
+\begin{lstlisting}
+ mat spin_matrix(n,n);
+    spin_matrix(0,0) =-1;
+    spin_matrix(0,1) = -1;
+    spin_matrix(1,0) = 1;
+    spin_matrix(1,1) = 1;
+
+\end{lstlisting}
+
+The flipping of the spins happen at random, so a random number generator is used to generate either one or zero. Allowing for equal chance of the spins flipping. 
+
+When finding the expected energy value, the change in energy is added up for all the Monte Carlo cycles (MC cycle). When dividing the total energy on the number of MC cycles the most likely energy state.
+
+The magnetization is found by just adding up the Spins as given in \matref{eq:EnergyMagnetization}. 
+
+The specific heat is found using 
+
+\begin{align}
+\frac{C_v}{J} = \frac{1}{Z} <E^2> - <E>^2
+\end{align}
+
+Where the energy is the expected energy found and  
+
+
+Proceeding to generate the energy and magnetization when the spin changes. This is done using MC cycles and finding the energy change when a spin flips. 
+
+\begin{lstlisting}
+for (int cycles = 1; cycles <= mccycles; cycles++){
+    for (int k=0; k<n; k++){
+    for (int i=0; i<n; i++){
+    x[i] = 1.99999*((double) rand() / (RAND_MAX));  //making sure that the row and column number is either 0 or 1 (randomly chosen - almost uniform)
+    y[i] = 1.99999*((double) rand() / (RAND_MAX));
+    //cout << "x=" << setw(5) << x[i] << setw(5) << "y=" << setw(5) << y[i] << endl;
+    if (x[i]<1){
+        DE_x = 4*spin_matrix(x[i],y[i])*spin_matrix(x[i]+1,y[i]);}
+    else{
+        DE_x = 4*spin_matrix(x[i],y[i])*spin_matrix(x[i]-1,y[i]);}
+    if (y[i]<1){
+        DE_y = 4*spin_matrix(x[i],y[i])*spin_matrix(x[i],y[i]+1);}
+    else{
+        DE_y = 4*spin_matrix(x[i],y[i])*spin_matrix(x[i],y[i]-1);}
+    DE = DE_x+DE_y;
+    if (DE <= 0){
+        E += DE;
+        M += -2*spin_matrix(x[i],y[i]);
+        spin_matrix(x[i],y[i]) = -spin_matrix(x[i],y[i]);}
+    else{
+        w = exp(-DE/T);
+        if (w > ((double) rand() / (RAND_MAX))){
+            E += DE;
+            M += -2*spin_matrix(x[i],y[i]);
+            spin_matrix(x[i],y[i]) = -spin_matrix(x[i],y[i]);
+        }}}}
+    // making the energy, magnetization and the squared of them
+    E_expectation += E;
+    M_expectation += M;
+    M_expectation2 += fabs(M); 
+    E_squared += E*E;
+    M_squared += M*M;}
+\end{lstlisting}
+
