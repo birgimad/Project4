@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.26)  6 NOV 2015 16:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.26)  9 NOV 2015 09:15
 entering extended mode
 **Report.tex
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.tex
@@ -1424,7 +1424,7 @@ LaTeX Info: Redefining \Ref on input line 4.
 .tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
- <Figures/UiO_Seal_A_ENG.png, id=47, 566.5968pt x 95.8782pt>
+ <Figures/UiO_Seal_A_ENG.png, id=51, 566.5968pt x 95.8782pt>
 File: Figures/UiO_Seal_A_ENG.png Graphic file (type png)
 
 <use Figures/UiO_Seal_A_ENG.png>
@@ -1540,7 +1540,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<Figures/Configurations.png, id=132, 722.7pt x 180.675pt>
+<Figures/Configurations.png, id=137, 722.7pt x 180.675pt>
 File: Figures/Configurations.png Graphic file (type png)
 
 <use Figures/Configurations.png>
@@ -1575,6 +1575,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 [5])
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/IsingModel.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package FiXme Warning: \fixme is deprecated;
+(FiXme)                please use \fxfatal instead on input line 3.
+
+[6] [7])
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/IsingModelNgreater
 .tex
 
@@ -1589,48 +1611,43 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-[6] <Figures/BoundaryConditions.png, id=205, 281.05pt x 200.75pt>
+<Figures/BoundaryConditions.png, id=238, 281.05pt x 200.75pt>
 File: Figures/BoundaryConditions.png Graphic file (type png)
 
 <use Figures/BoundaryConditions.png>
 Package pdftex.def Info: Figures/BoundaryConditions.png used on input line 12.
 (pdftex.def)             Requested size: 138.28189pt x 98.77269pt.
- [7 <C:/Users/Birgitte/Documents/GitHub/Project4/Report/Figures/BoundaryConditi
-ons.png>])
+ [8 <C:/Users/Birgitte/Documents/GitHub/Project4/Report/Figures/BoundaryConditi
+ons.png>] [9])
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Results.tex
-[8] [9] [10
+[10])
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/ResultsIsing.tex)
+(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex
+[11
+
+] [12
 
 ])
-(C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex
-[11] [12
-
-]) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.bbl
-[13] [14
-
-]
-bibitemlist
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [15]
+No file Report.bbl.
+[13]
 \tf@toc=\write6
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 28AF62F48D4BE786BC30CCD4E8B548D6;725.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+(rerunfilecheck)             Checksum: 3C75864CC9E4A3E929585D1017294930;818.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 20250 strings out of 493921
- 306491 string characters out of 3147273
- 624898 words of memory out of 3000000
- 22924 multiletter control sequences out of 15000+200000
+ 20318 strings out of 493921
+ 307649 string characters out of 3147273
+ 641139 words of memory out of 3000000
+ 22948 multiletter control sequences out of 15000+200000
  91183 words of font info for 198 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 57i,19n,97p,914b,1050s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,97p,914b,1735s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1643,9 +1660,9 @@ m/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report.pdf (23 pages, 221452 bytes).
+Output written on Report.pdf (21 pages, 233221 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 155 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 

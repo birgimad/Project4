@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2013.8.26)  6 NOV 2015 16:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2013.8.26)  9 NOV 2015 09:15
 entering extended mode
 **\let \APPmakepictures \empty \input  Report.tex
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Report.tex (C:\Users\Birgit
@@ -1451,6 +1451,31 @@ line 27.
 LaTeX Warning: Reference `sec:Susceptibility2times2' on page 6 undefined on inp
 ut line 27.
 
+) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/IsingModel.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package FiXme Warning: \fixme is deprecated;
+(FiXme)                please use \fxfatal instead on input line 3.
+
+
+LaTeX Warning: Reference `eq:EnergyMagnetization' on page 7 undefined on input 
+line 16.
+
 )
 (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/IsingModelNgreater
 .tex
@@ -1467,39 +1492,50 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
-LaTeX Warning: Reference `eq:EnergyMagnetization' on page 7 undefined on input 
+LaTeX Warning: Reference `eq:EnergyMagnetization' on page 8 undefined on input 
 line 7.
 
 
-LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 7 undefined on 
+LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 8 undefined on 
 input line 9.
 
 
-LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 7 undefined on 
+LaTeX Warning: Reference `fig:BoundaryConditionExample' on page 9 undefined on 
 input line 39.
 
 ) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Results.tex) (C:
-\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex)
+\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/ResultsIsing.tex
+
+LaTeX Warning: Reference `tab:MCising' on page 11 undefined on input line 2.
+
+
+LaTeX Warning: Reference `tab:ClosedFormSolution2times2T1' on page 11 undefined
+ on input line 24.
+
+
+LaTeX Warning: Reference `tab:MCising' on page 11 undefined on input line 24.
+
+) (C:\Users\Birgitte\Documents\GitHub\Project4\Report\Chapters/Conclusion.tex)
 No file Report-autopp.bbl.
 
 Package pst-pdf Warning: Picture container needs cropping..
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 40.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 19641 strings out of 493922
- 297980 string characters out of 3147296
- 619437 words of memory out of 3000000
- 22515 multiletter control sequences out of 15000+200000
+ 19673 strings out of 493922
+ 298716 string characters out of 3147296
+ 641437 words of memory out of 3000000
+ 22541 multiletter control sequences out of 15000+200000
  49697 words of font info for 135 fonts, out of 3000000 for 9000
  847 hyphenation exceptions out of 8191
- 57i,19n,97p,620b,1057s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,19n,97p,620b,1722s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 No pages of output.
