@@ -16,7 +16,7 @@ int periodic(int entrance, int pm, int spins)
     return (entrance + pm + spins) % spins;
 }
 
-int initialize(int spins, double temp, mat spin_matrix, int &E, int &M)
+int initialize(int spins, double temp, mat spin_matrix, double &E, double &M)
 {
     E=0; M=0;
     for (int i = 0; i < spins; i++)
@@ -41,15 +41,30 @@ int main()
     cin >> T;
     cout << "Please enter number of MC cycles:\n>";
     cin >> mccycles;
-    int E, M; //initialize energy and magnetization
+    double E, M; //initialize energy and magnetization
     double susceptibility, specific_heat;
     mat spin_matrix(n,n);
     spin_matrix.ones();
+    //Spin matrix with random initialization:
+/*
+    srand(time(NULL));
+    int a[n], b[n];
+    for (int i=0; i<n; i++)
+    {
+      for (int j=0; j<n; j++)
+      {
+    a[j] = (n-0.000001)*((double) rand() / (RAND_MAX));
+    b[j] = pow(-1,a[j]);
+    spin_matrix(i,j) = b[j];
+    }
+    }
+*/
     initialize(n,T,spin_matrix,E,M);
     double E_expectation = 0, M_expectation = 0, E_squared = 0, M_squared = 0;
+    int accepted_moves = 0;
 
-    int x[n*n], y[n*n];
-    int microstates = pow(2,n*n)+1;
+    int x[n], y[n];
+    int microstates = 17;      //pow(2,n*n)+1;
     //Compute w before MC to use the fact that the change of energy only can take 5 different values
     double w[microstates];
     for (int i =0; i < microstates; i++){
@@ -62,7 +77,9 @@ int main()
     srand(time(NULL));
     for (int cycles = 1; cycles <= mccycles; cycles++)
         {
-    for (int i=0; i<n*n; i++)
+    for (int k=0; k<n; k++)
+    {
+    for (int i=0; i<n; i++)
     {
     x[i] = (n-0.000001)*((double) rand() / (RAND_MAX));  //making sure that the row and column number is either 0 or 1 (randomly chosen - almost uniform)
     y[i] = (n-0.000001)*((double) rand() / (RAND_MAX));
@@ -74,6 +91,8 @@ int main()
         spin_matrix(x[i],y[i]) = -spin_matrix(x[i],y[i]);
         E += DE;
         M += 2*spin_matrix(x[i],y[i]);
+        accepted_moves += 1;
+    }
     }
     }
     //The computed energies are in the unit of E/J
@@ -89,11 +108,13 @@ int main()
     cout << "Number of MC cycles:" << setw(10) << mccycles << endl;
     //cout << "Most likely state" << endl;
     //cout << spin_matrix << endl;
+    cout << "Number of accepted moves:" << accepted_moves << endl;
     cout << "Expectation value of energy:" << setw(10) << E_expectation/mccycles << endl;
     cout << "Expectation value of magnetization:" << setw(10) << M_expectation/mccycles << endl;
     cout << "Specific heat:" << setw(10) << specific_heat << endl;
     cout << "Susceptibilty:" << setw(10) << susceptibility << endl;
 
+/*
     ofstream myfile ("IsingForC_LargerN_2.txt");
         if (myfile.is_open())
         {
@@ -109,6 +130,7 @@ int main()
             myfile << "Susceptibilty:" << setw(10) << susceptibility << endl;
 
         }
+*/
 
         return 0;
     }
