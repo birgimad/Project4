@@ -1,0 +1,14 @@
+\subsection{Test of one Spin Flip for $2\times 2$ Case}
+\label{Test2times2OneFlip}
+A simple test is made on the algorithm by considering a $2\times 2$ lattice having four spin values which forms the four elements of a 2 by 2 matrix. 
+Here we calculated how the energy and magnetization of the lattice changes with one spin flip. 
+The matrix elements are chosen to be $a_{11} = 1$, $a_{12} = -1$, $a_{21} = 1$, $a_{22} = 1$. 
+The spin at the position $a_{12} = -1$ is selected and energy of the initial configuration is calculated by multiplying spin value at $a_{12}$ with the neighbouring spin values and adding them that gave a result of 0. 
+The calculated energy is tested to be less than or equal to zero or not. 
+If it is the configuration is accepted and the energy and magnetization  is updated and the configuration is changed by flipping one spin only and if its not then the value $w = exp(-\Delta E/T)$ is calculated and the probability $w$ is compared with a random number $r$ uniformly distributed between 0 and 1. 
+If $w > r$ the configuration is accepted and the energy and magnetization is updated and the configuration is changed by flipping the spin. 
+In the present case since the calculated energy of the present state is equal to  0 the present configuration is accepted and the configuration is changed by flipping the spin at position $a_{12}$. 
+This gives the new configuration $a_{11} = 1$, $a_{12} = 1$, $a_21 = 1$, $a_{22} = 1$. 
+The change in energy due to switch of spin is found to be equal to -8, which is the expected value and change in magnetization which is calculated as magnetization before spin flip +2 * the selected spin value and  is equal to -2 which is also the expected value.
+
+\fxnote{read through and refer to data??}
